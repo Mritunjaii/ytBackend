@@ -20,7 +20,7 @@ const userSchema= new mongoose.Schema({
         lowercase:true,
         trim:true
     },
-    userName:{
+    fullName:{
         type:String,
         required:true,
         trim:true,
@@ -28,14 +28,14 @@ const userSchema= new mongoose.Schema({
     },
     avatar:{
         type:String,
-        required:true,
+        
     },
     coverImage:{
         type:String
     },
     watchHistory:[
         {
-            type:mongoose.Schema.Types.objectId,
+            type:mongoose.Schema.Types.ObjectId,
             ref:"Video"
         }
     ],
