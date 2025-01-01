@@ -2,6 +2,11 @@
 /node_module
 ./dist
 
+cloudinary.js
+cloudinary.js
+
+multer.js
+multer
 
 
 *.env
